@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-## [1.0.0](https://github.com/udigeri/inout/tree/v1.0.0) (2021-04-02)
+## [1.0.0](https://github.com/udigeri/kube/tree/v1.0.0) (2021-04-02)
 
 ### Added 
 
