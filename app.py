@@ -5,6 +5,15 @@ import os
 import datetime
 
 app = Flask(__name__)
+timeout = 3
+
+def timeout():
+    timeout = 3
+    try:
+        timeout = int(sys.argv[2].strip())
+    except Exception as e:
+        print(e)
+    return timeout
 
 def hello():
     picture = "w95"
@@ -27,7 +36,7 @@ def hello():
 
 @app.route("/")
 def html():
-    return "<!DOCTYPE html><html><head><meta http-equiv=\"refresh\" content=\"1\"></head><body style=\"font-size:30px; color:blue;\">{}</body></html>".format(hello())
+    return "<!DOCTYPE html><html><head><meta http-equiv=\"refresh\" content=\"{}\"></head><body style=\"font-size:30px; color:blue;\">{}</body></html>".format(timeout(), hello())
 
 
 if __name__== "__main__":
